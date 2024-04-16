@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres'
+    container_name: 'clean-arch-postgres'
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: 'my-database'
+      POSTGRES_PASSWORD: 'my-database'
+      POSTGRES_DB: 'my-database'
